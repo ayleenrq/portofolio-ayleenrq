@@ -1,6 +1,9 @@
 import './assets/main.css'
-
 import { createApp } from 'vue'
-import App from './App.vue'
+import Home from './views/Home.vue'
+import '@fortawesome/fontawesome-free/css/all.min.css'
 
-createApp(App).mount('#app')
+const home = createApp(Home)
+
+// Mount aplikasi
+home.mount('#home')
