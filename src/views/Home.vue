@@ -12,7 +12,7 @@ import Footer from '../components/layout/Footer.vue'
 <template>
   <Navigation />
 
-  <main class="flex flex-col gap-10 mt-20">
+  <main class="flex flex-col gap-10">
     <section id="hero">
       <Hero name="Hero" />
     </section>

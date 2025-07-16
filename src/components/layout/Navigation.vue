@@ -51,7 +51,6 @@ onUnmounted(() => {
   <nav class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200/50 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
-        <!-- Logo -->
         <div class="flex-shrink-0">
           <a
             href="#home"
@@ -83,74 +82,9 @@ onUnmounted(() => {
             </a>
           </div>
         </div>
-
-        <!-- Mobile menu button -->
-        <div class="md:hidden">
-          <button
-            @click="isMenuOpen = !isMenuOpen"
-            class="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100 focus:outline-none"
-          >
-            <span class="sr-only">Open main menu</span>
-            <svg
-              class="h-6 w-6"
-              :class="{ hidden: isMenuOpen, block: !isMenuOpen }"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-            <svg
-              class="h-6 w-6"
-              :class="{ block: isMenuOpen, hidden: !isMenuOpen }"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Mobile menu -->
-    <div
-      class="md:hidden transition-all duration-300 ease-in-out overflow-hidden bg-white"
-      :class="{ 'max-h-0': !isMenuOpen, 'max-h-96': isMenuOpen }"
-    >
-      <div class="pt-2 pb-3 space-y-1 px-4">
-        <a
-          v-for="item in navItems"
-          :key="item.id"
-          :href="`#${item.id}`"
-          @click="
-            () => {
-              scrollToSection(item.id)
-              isMenuOpen = false
-            }
-          "
-          class="block px-3 py-2 rounded-md text-base font-medium"
-          :class="{
-            'text-blue-600 bg-blue-50': activeSection === item.id,
-            'text-gray-600 hover:text-blue-600 hover:bg-blue-50': activeSection !== item.id,
-          }"
-        >
-          {{ item.name }}
-        </a>
       </div>
     </div>
   </nav>
 </template>
+
+<style scoped></style>
