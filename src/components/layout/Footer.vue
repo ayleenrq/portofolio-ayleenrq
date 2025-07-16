@@ -15,7 +15,7 @@ const links = [
 const socialLinks = [
   { name: 'GitHub', url: 'https://github.com/ayleenrq', icon: 'fab fa-github' },
   { name: 'LinkedIn', url: 'https://linkedin.com/in/ayleenrq', icon: 'fab fa-linkedin' },
-  { name: 'Instagram', url: 'https://instagram.com/ayleenrq_', icon: 'fab fa-instagram' },
+  { name: 'Instagram', url: 'https://instagram.com/ui.ayleen', icon: 'fab fa-instagram' },
 ]
 </script>
 
