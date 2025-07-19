@@ -2,8 +2,9 @@
 import Navigation from '../components/layout/Navigation.vue'
 import Hero from '../components/sections/Hero.vue'
 import About from '../components/sections/About.vue'
-import Skills from '../components/sections/Skills.vue'
+import Education from '../components/sections/Education.vue'
 import Experience from '../components/sections/Experience.vue'
+import Skills from '../components/sections/Skills.vue'
 import Projects from '../components/sections/Projects.vue'
 import Contact from '../components/sections/Contact.vue'
 import Footer from '../components/layout/Footer.vue'
@@ -21,12 +22,16 @@ import Footer from '../components/layout/Footer.vue'
       <About name="About" />
     </section>
 
-    <section id="skills">
-      <Skills name="Skills" />
+    <section id="education">
+      <Education name="Education" />
     </section>
 
     <section id="experience">
       <Experience name="Experience" />
+    </section>
+
+    <section id="skills">
+      <Skills name="Skills" />
     </section>
 
     <section id="projects">
