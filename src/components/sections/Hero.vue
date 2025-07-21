@@ -39,20 +39,20 @@ onMounted(() => {
 </style>
 
 <template>
-  <section id="hero">
-    <div class="flex flex-col gap-4 items-center justify-center h-200">
-      <h2 :class="['text-5xl font-bold fade-in', { 'opacity-100': isVisible }]">
+  <section id="hero" class="min-h-screen flex items-center justify-center pt-16 relative">
+    <div class="flex flex-col gap-4 items-center justify-center">
+      <h2 :class="['text-4xl font-bold fade-in', { 'opacity-100': isVisible }]">
         Hi, I'm <span class="text-blue-600">{{ name }}</span>
       </h2>
-      <p class="text-3xl font-semibold text-black/80">{{ title }}</p>
-      <p class="mt-6 text-2xl text-gray-600 max-w-3xl text-center">
+      <p class="text-2xl font-semibold text-black/80">{{ title }}</p>
+      <p class="mt-6 text-xl text-gray-600 max-w-2xl text-center">
         Undergraduate Informatics Engineering Student, interested in UI Design and Frontend
         Development.
       </p>
       <div class="flex gap-8 mt-6 items-center">
         <Button
           variant="primary"
-          size="lg"
+          size="md"
           class="shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200"
         >
           Download CV
