@@ -46,15 +46,24 @@ onMounted(() => {
       </h2>
       <p class="text-3xl font-semibold text-black/80">{{ title }}</p>
       <p class="mt-6 text-2xl text-gray-600 max-w-3xl text-center">
-        Undergraduate Informatics Engineering Student, interested in UI design and frontend development.
+        Undergraduate Informatics Engineering Student, interested in UI Design and Frontend
+        Development.
       </p>
       <div class="flex gap-8 mt-6 items-center">
-        <Button variant="primary" size="lg"
-          class="shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200">
+        <Button
+          variant="primary"
+          size="lg"
+          class="shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200"
+        >
           Download CV
         </Button>
-        <a v-for="link in socialLinks" :key="link.name" :href="link.url" target="_blank"
-          class="text-gray-500 hover:text-blue-600 transition-colors">
+        <a
+          v-for="link in socialLinks"
+          :key="link.name"
+          :href="link.url"
+          target="_blank"
+          class="text-gray-500 hover:text-blue-600 transition-colors"
+        >
           <i :class="link.icon" class="h-6 w-6"></i>
         </a>
       </div>

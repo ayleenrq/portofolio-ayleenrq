@@ -1,14 +1,9 @@
-<script setup>
+<script setup></script>
 
-</script>
-
-<style scoped>
-
-</style>
+<style scoped></style>
 
 <template>
-    <section id="education">
-      <h2>Education</h2>
-    </section>
+  <section id="education">
+    <h2>Education</h2>
+  </section>
 </template>
-  
