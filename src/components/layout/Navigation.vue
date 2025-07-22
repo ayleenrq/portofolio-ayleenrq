@@ -6,11 +6,7 @@ const activeSection = ref('home')
 const navItems = [
   { id: 'home', name: 'Home' },
   { id: 'about', name: 'About' },
-  { id: 'education', name: 'Education' },
-  { id: 'experience', name: 'Experience' },
-  { id: 'skills', name: 'Skills' },
   { id: 'projects', name: 'Projects' },
-  { id: 'contact', name: 'Contact' },
 ]
 
 const handleScroll = () => {
