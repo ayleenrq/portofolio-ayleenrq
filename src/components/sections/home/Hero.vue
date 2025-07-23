@@ -39,7 +39,7 @@ onMounted(() => {
 </style>
 
 <template>
-  <section id="hero" class="min-h-screen flex items-center justify-center pt-16 relative">
+  <section id="hero" class="min-h-screen flex items-center justify-center pt-16 relative overflow-hidden">
     <div class="flex flex-col gap-4 items-center justify-center">
       <h2 :class="['text-4xl font-bold fade-in', { 'opacity-100': isVisible }]">
         Hi, I'm <span class="text-blue-600">{{ name }}</span>
@@ -66,6 +66,9 @@ onMounted(() => {
         >
           <i :class="link.icon" class="h-6 w-6"></i>
         </a>
+      </div>
+      <div id="projects">
+
       </div>
     </div>
   </section>

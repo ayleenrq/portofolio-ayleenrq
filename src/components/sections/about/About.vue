@@ -3,13 +3,13 @@
 <style scoped></style>
 
 <template>
-  <section id="about" class="py-16 relative overflow-hidden">
-    <div class="flex flex-col gap-10 items-center justify-center">
-      <div class="flex flex-col items-center space-y-2">
+  <section id="about" class="relative mt-16 py-12 max-w-4xl mx-auto">
+    <div class="flex flex-col gap-10">
+      <div class="flex flex-col space-y-2">
         <h2 class="text-3xl font-bold">About Me</h2>
-        <span class="block h-1 w-25 rounded-full bg-blue-600 mt-1 mx-1"></span>
+        <span class="block h-1 w-15 rounded-full bg-blue-600 mt-1"></span>
       </div>
-      <div class="flex gap-20 items-center justify-center">
+      <div class="flex gap-15 items-center justify-center">
         <div class="text-base space-y-5 text-gray-600 max-w-lg leading-7 text-justify">
           <p>
             An Informatics Engineering student from the Department of Information Technology at
@@ -28,7 +28,7 @@
             and technologies to improve both my design and coding skills.
           </p>
         </div>
-        <img src="../../../assets/ayleen.jpg" class="w-90 rounded-4xl p-lg" alt="" />
+        <img src="../../../assets/ayleen.jpg" class="w-80 rounded-full p-lg" alt="Ayleen Ruhul Qisthy" />
       </div>
     </div>
   </section>

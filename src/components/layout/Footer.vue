@@ -14,7 +14,7 @@ const socialLinks = [
       </p>
 
       <div
-        class="flex justify-between items-center mt-12 pt-8 border-t border-gray-200 text-center"
+        class="flex justify-between items-center mt-12 pt-8 border-t border-dashed border-gray-200 text-center"
       >
         <p class="text-sm text-gray-500">Ayleen Ruhul Qisthy</p>
         <div class="flex space-x-4">
