@@ -28,7 +28,7 @@
             and technologies to improve both my design and coding skills.
           </p>
         </div>
-        <img src="../../assets/ayleen.jpg" class="w-90 rounded-4xl p-lg" alt="" />
+        <img src="../../../assets/ayleen.jpg" class="w-90 rounded-4xl p-lg" alt="" />
       </div>
     </div>
   </section>

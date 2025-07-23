@@ -1,6 +1,6 @@
 <script setup>
 import { ref, onMounted } from 'vue'
-import Button from '../ui/Button.vue'
+import Button from '../../ui/Button.vue'
 
 const name = ref('Ayleen Ruhul Qisthy')
 const title = ref('UI Designer & Frontend Developer')

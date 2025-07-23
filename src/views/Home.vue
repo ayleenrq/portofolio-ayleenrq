@@ -1,12 +1,11 @@
 <script setup>
 import Navigation from '../components/layout/Navigation.vue'
-import Hero from '../components/sections/Hero.vue'
-import About from '../components/sections/About.vue'
-import Education from '../components/sections/Education.vue'
-import Experience from '../components/sections/Experience.vue'
-import Skills from '../components/sections/Skills.vue'
-import Projects from '../components/sections/Projects.vue'
-import Contact from '../components/sections/Contact.vue'
+import Hero from '../components/sections/home/Hero.vue'
+import About from '../components/sections/about/About.vue'
+import Education from '../components/sections/about/Education.vue'
+import Experience from '../components/sections/about/Experience.vue'
+import Skills from '../components/sections/about/Skills.vue'
+import Projects from '../components/sections/projects/UIUX.vue'
 import Footer from '../components/layout/Footer.vue'
 </script>
 
@@ -36,10 +35,6 @@ import Footer from '../components/layout/Footer.vue'
 
     <section id="projects">
       <Projects name="Projects" />
-    </section>
-
-    <section id="contact">
-      <Contact name="Contact" />
     </section>
   </main>
 
