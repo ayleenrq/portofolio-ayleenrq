@@ -46,8 +46,8 @@ onMounted(() => {
       </h2>
       <p class="text-2xl font-semibold text-black/80">{{ title }}</p>
       <p class="mt-6 text-xl text-gray-600 max-w-2xl text-center">
-        Undergraduate Informatics Engineering Student, interested in UI Design and Frontend
-        Development.
+        Undergraduate Informatics Engineering Student, UI Design and Frontend Development
+        Enthusiast.
       </p>
       <div class="flex gap-8 mt-6 items-center">
         <Button
