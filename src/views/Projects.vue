@@ -9,8 +9,10 @@ import Footer from '../components/layout/Footer.vue'
   <Navigation />
 
   <main class="flex flex-col gap-10">
-    <section id="projects">
+    <section id="uiux">
       <UIUX name="UIUX" />
+    </section>
+    <section id="webdev">
       <WebDev name="WebDev" />
     </section>
   </main>

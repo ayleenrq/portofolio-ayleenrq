@@ -1,46 +1,18 @@
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { computed } from 'vue'
+import { useRoute, RouterLink } from 'vue-router'
 
-const activeSection = ref('home')
+const route = useRoute()
 
 const navItems = [
-  { id: 'home', name: 'Home' },
-  { id: 'about', name: 'About' },
-  { id: 'projects', name: 'Projects' },
+  { id: 'home', name: 'Home', path: '/' },
+  { id: 'about', name: 'About', path: '/about' },
+  { id: 'projects', name: 'Projects', path: '/projects' },
 ]
 
-const handleScroll = () => {
-  const sections = document.querySelectorAll('section[id]')
-  let current = ''
-
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop
-    const sectionHeight = section.offsetHeight
-    if (window.scrollY >= sectionTop - 100 && window.scrollY < sectionTop + sectionHeight - 100) {
-      current = section.getAttribute('id')
-    }
-  })
-
-  activeSection.value = current
-}
-
-const scrollToSection = (id) => {
-  const element = document.getElementById(id)
-  if (element) {
-    window.scrollTo({
-      top: element.offsetTop - 80,
-      behavior: 'smooth',
-    })
-  }
-}
-
-onMounted(() => {
-  window.addEventListener('scroll', handleScroll)
-  handleScroll()
-})
-
-onUnmounted(() => {
-  window.removeEventListener('scroll', handleScroll)
+const activeSection = computed(() => {
+  // Remove leading slash and return the route path (e.g., '/about' -> 'about')
+  return route.path === '/' ? 'home' : route.path.substring(1)
 })
 </script>
 
@@ -49,22 +21,21 @@ onUnmounted(() => {
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <div class="flex-shrink-0">
-          <a
-            href="#home"
+          <RouterLink
+            to="/"
             class="text-xl font-bold text-gray-800 hover:text-blue-600 transition-colors"
           >
             ayleen<span class="text-blue-600">rq</span>
-          </a>
+          </RouterLink>
         </div>
 
         <!-- Desktop Navigation -->
         <div class="hidden md:block">
           <div class="flex items-center space-x-1">
-            <a
+            <RouterLink
               v-for="item in navItems"
               :key="item.id"
-              :href="`#${item.id}`"
-              @click.prevent="scrollToSection(item.id)"
+              :to="item.path"
               class="px-4 py-2 text-sm font-medium rounded-md transition-all duration-200"
               :class="{
                 'text-blue-600 font-semibold': activeSection === item.id,
@@ -76,7 +47,7 @@ onUnmounted(() => {
                 v-if="activeSection === item.id"
                 class="block h-0.5 bg-blue-600 mt-1 -mx-1"
               ></span>
-            </a>
+            </RouterLink>
           </div>
         </div>
       </div>
