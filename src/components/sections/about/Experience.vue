@@ -24,10 +24,10 @@
               </div>
               <div class="z-50 flex flex-col justify-start">
                 <h3 class="text-lg font-semibold">
-                  Bachelor of Applied Science - BASc, Information Technology
+                  Intensive Bootcamp UI/UX Research and Design
                 </h3>
-                <p class="font-medium text-gray-800 my-1">State Polytechnic of Malang</p>
-                <p class="text-gray-400">2023 - 2027</p>
+                <p class="font-medium text-gray-800 my-1">MySkill</p>
+                <p class="text-gray-400">July 2025 - September 2025</p>
               </div>
             </div>
           </div>
