@@ -5,8 +5,8 @@
 <template>
   <section id="about" class="relative mt-16 py-12 max-w-4xl mx-auto">
     <div class="flex flex-col gap-10">
-      <div class="flex flex-col space-y-2">
-        <h2 class="text-3xl font-bold">About Me</h2>
+      <div class="flex flex-col space-y-1">
+        <h2 class="text-2xl font-bold">About Me</h2>
         <span class="block h-1 w-15 rounded-full bg-blue-600 mt-1"></span>
       </div>
       <div class="flex gap-15 items-center justify-center">
@@ -28,7 +28,7 @@
             and technologies to improve both my design and coding skills.
           </p>
         </div>
-        <img src="../../../assets/ayleen.jpg" class="w-80 rounded-full p-lg" alt="Ayleen Ruhul Qisthy" />
+        <img src="../../../assets/images/ayleen.jpg" class="w-80 rounded-full p-lg" alt="Ayleen Ruhul Qisthy" />
       </div>
     </div>
   </section>
