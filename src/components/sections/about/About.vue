@@ -28,7 +28,11 @@
             and technologies to improve both my design and coding skills.
           </p>
         </div>
-        <img src="../../../assets/images/ayleen.jpg" class="w-80 rounded-full p-lg" alt="Ayleen Ruhul Qisthy" />
+        <img
+          src="../../../assets/images/ayleen.jpg"
+          class="w-80 rounded-full p-lg"
+          alt="Ayleen Ruhul Qisthy"
+        />
       </div>
     </div>
   </section>
