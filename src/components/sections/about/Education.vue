@@ -3,8 +3,9 @@
 <style scoped></style>
 
 <template>
-  <section id="education" class="bg-white border-t border-gray-200">
-    <div class="relative py-12 max-w-4xl mx-auto">
+  <section id="education" class="bg-white ">
+    <div class="border-t border-gray-200 my-16"></div>
+    <div class="relative py-12">
       <div class="flex flex-col gap-10">
         <div class="flex flex-col space-y-1">
           <h2 class="text-2xl font-bold">Educations</h2>

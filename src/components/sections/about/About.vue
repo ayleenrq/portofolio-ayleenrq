@@ -3,7 +3,7 @@
 <style scoped></style>
 
 <template>
-  <section id="about" class="relative mt-16 py-12 max-w-4xl mx-auto">
+  <section id="about" class="relative mt-16 py-12">
     <div class="flex flex-col gap-10">
       <div class="flex flex-col space-y-1">
         <h2 class="text-2xl font-bold">About Me</h2>

@@ -4,7 +4,7 @@
 
 <template>
   <section id="experience" class="bg-white">
-    <div class="relative py-8 max-w-4xl mx-auto">
+    <div class="relative py-12">
       <div class="flex flex-col gap-10">
         <div class="flex flex-col space-y-1">
           <h2 class="text-2xl font-bold">Experience</h2>

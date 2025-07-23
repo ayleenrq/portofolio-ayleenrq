@@ -7,7 +7,7 @@ import Footer from '../components/layout/Footer.vue'
 <template>
   <Navigation />
 
-  <main class="flex flex-col gap-10">
+  <main class="flex flex-col bg-[length:20px_20px] bg-[radial-gradient(#d4d4d4_1px,transparent_1px)]">
     <section id="hero">
       <Hero name="Hero" />
     </section>

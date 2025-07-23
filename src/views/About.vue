@@ -10,7 +10,7 @@ import Footer from '../components/layout/Footer.vue'
 <template>
   <Navigation />
 
-  <main class="flex flex-col">
+  <main class="flex flex-col max-w-4xl mx-auto">
     <section id="about">
       <About name="About" />
     </section>

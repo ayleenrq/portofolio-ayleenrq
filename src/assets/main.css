@@ -4,7 +4,7 @@ body {
   font-family: 'Urbanist', sans-serif;
   background-color: white;
   overflow-x: hidden;
-  background-image: radial-gradient(#d4d4d4 1px, transparent 1px);
+  /* background-image: radial-gradient(#d4d4d4 1px, transparent 1px); */
   background-size: 20px 20px;
   min-height: 100vh;
 }
