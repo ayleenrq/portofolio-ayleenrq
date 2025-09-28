@@ -11,12 +11,29 @@ const skillCategories = [
     ],
   },
   {
-    title: 'UI/UX & Visual',
+    title: 'Programming Languages',
+    description: 'Core languages for application development.',
+    skills: [
+      { name: 'Java' },
+      { name: 'PHP' },
+      { name: 'JavaScript' },
+      { name: 'SQL' },
+    ],
+  },
+  {
+    title: 'Backend Frameworks',
+    description: 'Modern frameworks for building robust backends.',
+    skills: [
+      { name: 'Laravel' },
+    ],
+  },
+  {
+    title: 'UI/UX & Visual Design',
     description: 'Translating research into intuitive, aesthetic design.',
     skills: [
-      { name: 'Figma' },
       { name: 'Wireframing' },
       { name: 'Prototyping' },
+      { name: 'User Research' },
       { name: 'Usability Testing' },
     ],
   },
@@ -25,6 +42,7 @@ const skillCategories = [
     description: 'Day-to-day tools for collaboration and delivery.',
     skills: [
       { name: 'Figma' },
+      { name: 'Canva' },
       { name: 'Git' },
       { name: 'GitHub' },
       { name: 'Notion' },
@@ -32,12 +50,6 @@ const skillCategories = [
   },
 ]
 
-const highlights = [
-  'Responsive Design',
-  'Component-Driven UI',
-  'Design Systems',
-  'Accessibility (a11y)',
-]
 </script>
 
 <style scoped>
@@ -62,27 +74,15 @@ const highlights = [
 </style>
 
 <template>
-  <section id="skills" class="bg-white">
+  <section id="skills">
     <div class="relative py-12">
       <div class="flex flex-col gap-10">
         <div class="flex flex-col space-y-1">
           <h2 class="text-2xl font-bold">Skills</h2>
-          <span class="block h-1 w-15 rounded-full bg-blue-600 mt-1"></span>
+          <span class="block h-1 w-16 rounded-full bg-blue-600 mt-1"></span>
         </div>
 
         <div class="px-6">
-          <!-- Highlights badges -->
-          <div class="flex flex-wrap gap-2 mb-6">
-            <span
-              v-for="(item, i) in highlights"
-              :key="`hl-${i}`"
-              class="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 text-blue-700 px-3 py-1 text-sm hover:bg-blue-100 transition"
-            >
-              <span class="block h-1.5 w-1.5 rounded-full bg-blue-500"></span>
-              {{ item }}
-            </span>
-          </div>
-
           <!-- Skill cards -->
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <div
@@ -111,7 +111,7 @@ const highlights = [
                   <span
                     v-for="skill in cat.skills"
                     :key="skill.name"
-                    class="inline-flex items-center rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-sm text-gray-700 hover:bg-gray-100 transition"
+                    class="inline-flex items-center rounded-full border border-blue-200 bg-blue-50 text-blue-700 px-3 py-1 text-sm hover:bg-blue-100 transition"
                   >
                     {{ skill.name }}
                   </span>

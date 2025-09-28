@@ -11,26 +11,28 @@ import Footer from '../components/layout/Footer.vue'
 <template>
   <Navigation />
 
-  <main class="flex flex-col max-w-4xl mx-auto">
-    <section id="about">
-      <About name="About" />
-    </section>
+  <main class="bg-[length:20px_20px] bg-[radial-gradient(#eeeeee_1px,transparent_1px)]">
+    <div class="flex flex-col max-w-4xl mx-auto">
+      <section id="about">
+        <About name="About" />
+      </section>
 
-    <section id="education">
-      <Education name="Education" />
-    </section>
+      <section id="education">
+        <Education name="Education" />
+      </section>
 
-    <section id="experience">
-      <Experience name="Experience" />
-    </section>
+      <section id="experience">
+        <Experience name="Experience" />
+      </section>
 
-    <section id="organization">
-      <Organization name="Organization" />
-    </section>
+      <section id="organization">
+        <Organization name="Organization" />
+      </section>
 
-    <section id="skills">
-      <Skills name="Skills" />
-    </section>
+      <section id="skills">
+        <Skills name="Skills" />
+      </section>
+    </div>
   </main>
 
   <Footer />
