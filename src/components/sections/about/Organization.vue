@@ -30,16 +30,6 @@
               </div>
             </div>
           </div>
-          <div class="pb-10 border-l border-gray-200">
-            <div class="relative flex flex-col justify-start pl-12">
-              <div class="z-50 flex flex-col justify-start">
-                <h3 class="text-lg font-semibold">Mentor UI/UX Design</h3>
-                <p class="font-medium text-gray-800 my-1">Workshop & Riset Informatika</p>
-                <p class="text-gray-400">September 2025 - October 2025</p>
-                <p class="text-gray-600">Responsible for guiding and mentoring students in the field of UI/UX Design, including providing feedback, answering questions, and helping them improve their skills.</p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>

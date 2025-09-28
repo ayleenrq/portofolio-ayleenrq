@@ -8,7 +8,8 @@ import Footer from '../components/layout/Footer.vue'
 <template>
   <Navigation />
 
-  <main class="flex flex-col gap-10">
+  <main class="flex flex-col max-w-4xl mx-auto">
+    <h2 class="text-2xl font-bold space-y-1 mt-16 py-12 text-center">Projects</h2>
     <section id="uiux">
       <UIUX name="UIUX" />
     </section>
